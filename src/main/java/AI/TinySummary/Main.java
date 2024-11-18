@@ -81,10 +81,10 @@ public class Main {
                 System.out.println("Notes: " + notes);
                 System.out.println("PatientNoteCreatedDate: " + patientNoteCreatedDate);
                 System.out.println("------------------------------");
-                String AIResponse = AIService.generateSummary(conditionDescription, consultationRequestTinySummary, consultationRequestCreatedDate, consultationTinySummary, consultationCreatedDate, notes, patientNoteCreatedDate);
+                String AIResponse = AIService.generateSummary(conditionDescription, consultationRequestTinySummary, consultationRequestCreatedDate, consultationTinySummary, notes);
                 System.out.println("AI Summary Version1 : \n" + AIResponse);
                 System.out.println("------------------------------");
-                String AIResponseVer2 = AIService.generateSummaryVersion2(conditionDescription, consultationRequestTinySummary, consultationRequestCreatedDate, consultationTinySummary, consultationCreatedDate, notes, patientNoteCreatedDate);
+                String AIResponseVer2 = AIService.generateSummaryVersion2(conditionDescription, consultationRequestTinySummary, consultationRequestCreatedDate, consultationTinySummary, notes);
                 System.out.println("AI Summary Version2 : \n" + AIResponseVer2);
                 System.out.println("------------------------------");
                 String AIResponseVer3 = AIService.generateSummaryVersion3(conditionDescription, consultationRequestTinySummary, consultationRequestCreatedDate, consultationTinySummary, consultationCreatedDate, notes, patientNoteCreatedDate);
